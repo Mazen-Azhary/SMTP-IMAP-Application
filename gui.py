@@ -1,4 +1,5 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication, QTableWidget, QTableWidgetItem, QWidget, QVBoxLayout, QMessageBox, QDialog, QLabel, QTextEdit
+from PyQt5.QtGui import QIcon
 from PyQt5.uic import loadUi
 from imap_server import imap_server
 from smtp_server import smtp_server
@@ -32,6 +33,9 @@ class GUII(QMainWindow):
     def __init__(self):
         super().__init__()
         loadUi("ui.ui", self)  
+        # Set window title and favicon
+        self.setWindowTitle("Email Client App")
+        self.setWindowIcon(QIcon("mail.png"))
         # Initialize email classes
         self.imap = imap_server()
         self.smtp = smtp_server()
