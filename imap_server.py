@@ -3,7 +3,11 @@ from email.parser import Parser
 import html2text
 from dotenv import load_dotenv
 import os
+from plyer import notification
 load_dotenv()
+
+
+
 """
 this script uses IMAP : internet message access protocol to get emails from my email's inbox
 by first fetching their id's , then using those id's we get from 0 to 10 full emails with their
@@ -23,6 +27,18 @@ class imap_server:
         self.imap_port = 993
         self.username = os.getenv("EMAIL_USERNAME")
         self.password = os.getenv("EMAIL_PASSWORD")
+        
+    def send_notification(self, title, message):
+        #Send Windows desktop notification
+        try:
+            notification.notify(
+                title=title,
+                message=message,
+                app_name="elbatta elsha2eya",
+                timeout=10  # notification stays for 10 seconds
+            )
+        except Exception as e:
+            print(f"Error sending notification: {e}")
     
     def extract_email_body(self, email_message):
         body = ""
@@ -99,7 +115,11 @@ class imap_server:
                     'id': email_id.decode()
                 }
                 emails.append(email_dict)
-            
+                sender_name = email_message['From'].split('<')[0].strip()
+                self.send_notification(
+                    title="New Email",
+                    message=f"From: {sender_name}\nSubject: {email_dict['subject'][:50]}"
+                )
             server.close()
             server.logout()
             
