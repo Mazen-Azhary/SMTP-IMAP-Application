@@ -1,2 +1,5 @@
 .env
 lab 2.pdf
+__pycache__
+.dist
+.qodo
