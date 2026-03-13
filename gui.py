@@ -35,7 +35,7 @@ class GUII(QMainWindow):
         loadUi("ui.ui", self)  
         # Set window title and favicon
         self.setWindowTitle("Email Client App")
-        self.setWindowIcon(QIcon("mail.png"))
+        self.setWindowIcon(QIcon("images/mail.png"))
         # Initialize email classes
         self.imap = imap_server()
         self.smtp = smtp_server()

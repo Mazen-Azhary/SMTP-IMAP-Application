@@ -83,7 +83,7 @@ background-color:#FFD700;
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>duck.jpg</pixmap>
+         <pixmap>images/duck.jpg</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -134,7 +134,7 @@ background-color:white;
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap>duck.jpg</pixmap>
+          <pixmap>images/duck.jpg</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
@@ -278,7 +278,7 @@ background-color:#FFD700;
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>duck.jpg</pixmap>
+         <pixmap>images/duck.jpg</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>

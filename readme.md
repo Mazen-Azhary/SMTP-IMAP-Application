@@ -114,13 +114,13 @@ text
 
 ## Screenshots
 
-Main Menu![Main Menu Image](mainMenu.jpg)
+Main Menu![Main Menu Image](images/mainMenu.jpg)
 
-Send Emails Menu![Send Mail Menu](sendMailMenu.jpg)
+Send Emails Menu![Send Mail Menu](images/sendMailMenu.jpg)
 
-View Mails![View Mail Menu](viewMail.jpg)
+View Mails![View Mail Menu](images/viewMail.jpg)
 
-Notification System![View Mail Menu](notification.png)
+Notification System![View Mail Menu](images/notification.png)
 
 ---
 
