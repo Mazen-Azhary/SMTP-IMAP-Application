@@ -1,6 +1,6 @@
 # Email Sender Reciever Desktop App
 
-This project is a desktop email client built with Python and PyQt5 that allows you to send and receive emails using your Gmail account. The application integrates IMAP for fetching emails and SMTP for sending emails, providing a simple graphical interface to manage your inbox.
+This project is a desktop email client built by Mazen Azhary(myself) using Python and PyQt5 that allows you to send and receive emails using your Gmail account. The application integrates IMAP for fetching emails and SMTP for sending emails, providing a simple graphical interface to manage your inbox.
 
 ---
 
@@ -39,7 +39,7 @@ This project is a desktop email client built with Python and PyQt5 that allows y
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/email-client-pyqt5.git
+   git clone https://github.com/Mazen-Azhary/email-client-pyqt5.git
    cd email-client-pyqt5
    ```
 2. **Create a virtual environment** (recommended):
